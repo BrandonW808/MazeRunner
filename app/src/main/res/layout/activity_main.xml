@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.example.brandonward.mazerunner.MainActivity">
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b11"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b12"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b11" />
+
+    <ToggleButton
+        android:id="@+id/b13"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b12" />
+
+    <ToggleButton
+        android:id="@+id/b14"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b13" />
+
+    <ToggleButton
+        android:id="@+id/b15"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b14" />
+
+    <ToggleButton
+        android:id="@+id/b16"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b15" />
+
+    <ToggleButton
+        android:id="@+id/b17"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b16" />
+
+    <ToggleButton
+        android:id="@+id/b18"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b17" />
+
+    <ToggleButton
+        android:id="@+id/b19"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintBottom_toTopOf="@+id/b110"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b18" />
+
+    <ToggleButton
+        android:id="@+id/b110"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b19" />
+
+    <ToggleButton
+        android:id="@+id/b111"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b210" />
+
+    <ToggleButton
+        android:id="@+id/b112"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="112"
+        android:textOff="112"
+        app:layout_constraintEnd_toStartOf="@+id/b212"
+        app:layout_constraintTop_toBottomOf="@+id/b111" />
+
+
+
+    <!-- END OF BLOCK -->
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b21"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b22"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b12"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b23"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b13"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b24"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b14"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b25"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b15"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b26"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b16"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b27"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b17"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b28"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b18"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b29"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b19"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b210"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintStart_toEndOf="@+id/b110"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b211"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b111"
+        app:layout_constraintTop_toBottomOf="@+id/b210" />
+
+    <ToggleButton
+        android:id="@+id/b212"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b111"
+        app:layout_constraintTop_toBottomOf="@+id/b211" />
+
+
+    <!-- END OF BLOCK -->
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b31"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b32"
+        app:layout_constraintStart_toEndOf="@+id/b21"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b32"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b33"
+        app:layout_constraintStart_toEndOf="@+id/b22"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b33"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b23"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b34"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b24"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b35"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b25"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b36"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b26"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b37"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b27"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b38"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b28"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b39"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b29"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b310"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b311"
+        app:layout_constraintStart_toEndOf="@+id/b210"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b311"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b211"
+        app:layout_constraintTop_toBottomOf="@+id/b210" />
+
+    <ToggleButton
+        android:id="@+id/b312"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b211"
+        app:layout_constraintTop_toBottomOf="@+id/b211" />
+
+
+    <!-- END OF BLOCK -->
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+
+    <ToggleButton
+        android:id="@+id/b41"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b31"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b42"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b32"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b43"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b33"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b44"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b34"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b45"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b35"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b46"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b36"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b47"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b37"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b48"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b38"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b49"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b39"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b410"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b411"
+        app:layout_constraintStart_toEndOf="@+id/b310"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b411"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b311"
+        app:layout_constraintTop_toBottomOf="@+id/b210" />
+
+    <ToggleButton
+        android:id="@+id/b412"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b311"
+        app:layout_constraintTop_toBottomOf="@+id/b311" />
+
+
+    <!-- END OF BLOCK -->
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b51"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b41"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b52"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b42"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b53"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b43"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b54"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b44"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b55"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b45"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b56"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b46"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b57"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b47"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b58"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b48"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b59"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b49"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b510"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b511"
+        app:layout_constraintStart_toEndOf="@+id/b410"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b511"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b411"
+        app:layout_constraintTop_toBottomOf="@+id/b210" />
+
+    <ToggleButton
+        android:id="@+id/b512"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="12"
+        android:textOff="12"
+        app:layout_constraintStart_toEndOf="@+id/b411"
+        app:layout_constraintTop_toBottomOf="@+id/b411" />
+
+
+    <!-- END OF BLOCK -->
+
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b61"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b51"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b62"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b52"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b63"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b53"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b64"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b54"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b65"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b55"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b66"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b56"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b67"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b57"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b68"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b58"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b69"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b59"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b610"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b511"
+        app:layout_constraintStart_toEndOf="@+id/b510"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b611"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b511"
+        app:layout_constraintTop_toBottomOf="@+id/b210" />
+
+    <ToggleButton
+        android:id="@+id/b612"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="12"
+        android:textOff="12"
+        app:layout_constraintStart_toEndOf="@+id/b511"
+        app:layout_constraintTop_toBottomOf="@+id/b511" />
+
+
+    <!-- END OF BLOCK -->
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b71"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b61"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b72"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b62"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b73"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b63"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b74"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b64"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b75"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b65"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b76"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b66"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b77"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b67"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b78"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b68"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b79"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b69"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b710"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b611"
+        app:layout_constraintStart_toEndOf="@+id/b610"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b711"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b611"
+        app:layout_constraintTop_toBottomOf="@+id/b710" />
+
+    <ToggleButton
+        android:id="@+id/b712"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="12"
+        android:textOff="12"
+        app:layout_constraintStart_toEndOf="@+id/b611"
+        app:layout_constraintTop_toBottomOf="@+id/b711" />
+
+
+    <!-- END OF BLOCK -->
+
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b81"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b71"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b82"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b72"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b83"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b73"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b84"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b74"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b85"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b75"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b86"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b76"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b87"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b77"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b88"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b78"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b89"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b79"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b810"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b711"
+        app:layout_constraintStart_toEndOf="@+id/b710"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b811"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b711"
+        app:layout_constraintTop_toBottomOf="@+id/b710" />
+
+    <ToggleButton
+        android:id="@+id/b812"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="12"
+        android:textOff="12"
+        app:layout_constraintStart_toEndOf="@+id/b711"
+        app:layout_constraintTop_toBottomOf="@+id/b811" />
+
+
+    <!-- END OF BLOCK -->
+
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b91"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b81"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b92"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b82"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b93"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b83"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b94"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b84"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b95"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b85"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b96"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b86"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b97"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b87"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b98"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b88"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b99"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b89"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b910"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b811"
+        app:layout_constraintStart_toEndOf="@+id/b810"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b911"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b811"
+        app:layout_constraintTop_toBottomOf="@+id/b810" />
+
+    <ToggleButton
+        android:id="@+id/b912"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="12"
+        android:textOff="12"
+        app:layout_constraintStart_toEndOf="@+id/b811"
+        app:layout_constraintTop_toBottomOf="@+id/b911" />
+
+
+    <!-- END OF BLOCK -->
+
+
+
+    <!-- COPY-ABLE BLOCK TO ADD COLUMNS -->
+    <ToggleButton
+        android:id="@+id/b101"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="1"
+        android:textOff="1"
+        app:layout_constraintBottom_toTopOf="@+id/b22"
+        app:layout_constraintStart_toEndOf="@+id/b91"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/b102"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="2"
+        android:textOff="2"
+        app:layout_constraintBottom_toTopOf="@+id/b23"
+        app:layout_constraintStart_toEndOf="@+id/b92"
+        app:layout_constraintTop_toBottomOf="@+id/b21" />
+
+    <ToggleButton
+        android:id="@+id/b103"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="3"
+        android:textOff="3"
+        app:layout_constraintBottom_toTopOf="@+id/b24"
+        app:layout_constraintStart_toEndOf="@+id/b93"
+        app:layout_constraintTop_toBottomOf="@+id/b22"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/b104"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="4"
+        android:textOff="4"
+        app:layout_constraintBottom_toTopOf="@+id/b25"
+        app:layout_constraintStart_toEndOf="@+id/b94"
+        app:layout_constraintTop_toBottomOf="@+id/b23" />
+
+    <ToggleButton
+        android:id="@+id/b105"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="5"
+        android:textOff="5"
+        app:layout_constraintBottom_toTopOf="@+id/b26"
+        app:layout_constraintStart_toEndOf="@+id/b95"
+        app:layout_constraintTop_toBottomOf="@+id/b24" />
+
+    <ToggleButton
+        android:id="@+id/b106"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="6"
+        android:textOff="6"
+        app:layout_constraintBottom_toTopOf="@+id/b27"
+        app:layout_constraintStart_toEndOf="@+id/b96"
+        app:layout_constraintTop_toBottomOf="@+id/b25" />
+
+    <ToggleButton
+        android:id="@+id/b107"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="7"
+        android:textOff="7"
+        app:layout_constraintBottom_toTopOf="@+id/b28"
+        app:layout_constraintStart_toEndOf="@+id/b97"
+        app:layout_constraintTop_toBottomOf="@+id/b26" />
+
+    <ToggleButton
+        android:id="@+id/b108"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="8"
+        android:textOff="8"
+        app:layout_constraintBottom_toTopOf="@+id/b29"
+        app:layout_constraintStart_toEndOf="@+id/b98"
+        app:layout_constraintTop_toBottomOf="@+id/b27" />
+
+    <ToggleButton
+        android:id="@+id/b109"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="9"
+        android:textOff="9"
+        app:layout_constraintStart_toEndOf="@+id/b99"
+        app:layout_constraintTop_toBottomOf="@+id/b28" />
+
+    <ToggleButton
+        android:id="@+id/b1010"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="10"
+        android:textOff="10"
+        app:layout_constraintBottom_toTopOf="@+id/b911"
+        app:layout_constraintStart_toEndOf="@+id/b910"
+        app:layout_constraintTop_toBottomOf="@+id/b29" />
+
+    <ToggleButton
+        android:id="@+id/b1011"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="11"
+        android:textOff="11"
+        app:layout_constraintStart_toEndOf="@+id/b911"
+        app:layout_constraintTop_toBottomOf="@+id/b910" />
+
+    <ToggleButton
+        android:id="@+id/b1012"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="12"
+        android:textOff="12"
+        app:layout_constraintStart_toEndOf="@+id/b912"
+        app:layout_constraintTop_toBottomOf="@+id/b1011" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="14dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b512" />
+
+
+    <!-- END OF BLOCK -->
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

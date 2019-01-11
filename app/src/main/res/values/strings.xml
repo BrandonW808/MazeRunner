@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Maze Runner</string>
+    <string name="no_path">No Path!</string>
+    <string name="path">Found a Path!</string>
+</resources>
